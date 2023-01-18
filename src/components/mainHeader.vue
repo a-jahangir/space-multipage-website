@@ -34,7 +34,6 @@
     align-items: center;
     position: relative;
     height: 80px;
-    width: 100%;
     padding-left: 60px;
     margin-top: 2rem;
 }
@@ -50,13 +49,13 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    padding-right: 10%;
+    padding: 0 10%;
 }
 nav a {
     text-decoration: none;
     color: #ffffff;
     padding: 8px;
-    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .line {
