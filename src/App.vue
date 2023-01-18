@@ -14,7 +14,7 @@ import mainHeader from './components/mainHeader.vue'
 
 html {
   background-image: url(./assets/home/background-home-desktop.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
 }
 
