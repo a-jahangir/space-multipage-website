@@ -45,25 +45,21 @@ nav {
     background-color: rgba(255, 255, 255, 0.048);
     backdrop-filter: blur(30px);
 }
-
 nav ul {
     list-style-type: none;
     display: flex;
     padding-left: 12%;
 }
-
 nav a {
     text-decoration: none;
     display: flex;
     color: #ffffff;
     padding-right: 50px;
 }
-
 nav a span{
     color: #cacaca9d;
     padding-left: 8px;
 }
-
 nav a span:hover{
     color: #ffffff;
 }
