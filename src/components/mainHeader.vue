@@ -59,10 +59,10 @@ nav a {
 
 .line {
     position: absolute;
-    left: 12%;
     bottom: 50%;
+    left: 12%;
     width: 33%;
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.25);
     z-index: 2;
 }
 </style>
