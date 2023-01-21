@@ -70,7 +70,7 @@ nav a span:hover{
     bottom: 50%;
     left: 12%;
     width: 33%;
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.1);
     z-index: 2;
 }
 </style>
