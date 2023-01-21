@@ -13,10 +13,10 @@
             <hr class="line">
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">DESTINATION</a></li>
-                    <li><a href="#">CREW</a></li>
-                    <li><a href="#">TECHNOLOGY</a></li>
+                    <li><a href="#">01 HOME</a></li>
+                    <li><a href="#">02 DESTINATION</a></li>
+                    <li><a href="#">03 CREW</a></li>
+                    <li><a href="#">04 TECHNOLOGY</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,7 +25,7 @@
 
 <style scoped>
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
 .main-header {
@@ -49,20 +49,19 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    padding: 0 10%;
+    padding-left: 15%;
 }
 nav a {
     text-decoration: none;
     color: #ffffff;
-    padding: 8px;
-    padding-right: 32px;
+    padding-right: 50px;
 }
 
 .line {
     position: absolute;
-    left: 15%;
-    width: 30%;
-    border-color: rgba(255, 255, 255, 0.288);
+    left: 12%;
+    width: 33%;
+    border-color: rgba(255, 255, 255, 0.2);
     z-index: 2;
 }
 </style>
