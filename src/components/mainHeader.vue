@@ -48,6 +48,8 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
+    position: absolute;
+    bottom: 40%;
     padding-left: 12%;
 }
 nav a {
