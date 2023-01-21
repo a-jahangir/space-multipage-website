@@ -13,10 +13,10 @@
             <hr class="line">
             <nav>
                 <ul>
-                    <li><a href="#">01 HOME</a></li>
-                    <li><a href="#">02 DESTINATION</a></li>
-                    <li><a href="#">03 CREW</a></li>
-                    <li><a href="#">04 TECHNOLOGY</a></li>
+                    <li><a href="#">01<span>HOME</span></a></li>
+                    <li><a href="#">02<span>DESTINATION</span></a></li>
+                    <li><a href="#">03<span>CREW</span></a></li>
+                    <li><a href="#">04<span>TECHNOLOGY</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -49,20 +49,30 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    padding-left: 15%;
+    padding-left: 12%;
 }
+
 nav a {
     text-decoration: none;
+    display: flex;
     color: #ffffff;
     padding-right: 50px;
 }
 
+nav a span{
+    color: #cacaca9d;
+    padding-left: 8px;
+}
+
+nav a span:hover{
+    color: #ffffff;
+}
 .line {
     position: absolute;
     bottom: 50%;
     left: 12%;
     width: 33%;
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.2);
     z-index: 2;
 }
 </style>
