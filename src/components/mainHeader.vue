@@ -21,15 +21,9 @@
             </nav>
         </div>
     </header>
-    <Router-view></Router-view>
 </template>
 
 <style scoped>
-* {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-}
 .main-header {
     display: flex;
     justify-content: space-between;
