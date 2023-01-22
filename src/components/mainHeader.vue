@@ -33,6 +33,7 @@
     padding-left: 60px;
     margin-top: 2rem;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -41,24 +42,29 @@ nav {
     background-color: rgba(255, 255, 255, 0.048);
     backdrop-filter: blur(30px);
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
     position: absolute;
-    bottom: 40%;
+    bottom: 1%;
     padding-left: 12%;
 }
+
 nav a {
     text-decoration: none;
     display: flex;
+    height: 50px;
     color: #ffffff;
-    padding-right: 50px;
+    margin-right: 50px;
 }
-nav a span{
+
+nav a span {
     color: #cacaca9d;
     padding-left: 8px;
 }
-nav a span:hover{
+
+nav a span:hover {
     color: #ffffff;
 }
 .line {
@@ -68,5 +74,9 @@ nav a span:hover{
     width: 33%;
     border-color: rgba(255, 255, 255, 0.1);
     z-index: 2;
+}
+.router-link-active {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
 }
 </style>
