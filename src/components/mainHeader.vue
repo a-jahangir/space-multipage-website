@@ -13,19 +13,21 @@
             <hr class="line">
             <nav>
                 <ul>
-                    <li><a href="#">01<span>HOME</span></a></li>
-                    <li><a href="#">02<span>DESTINATION</span></a></li>
-                    <li><a href="#">03<span>CREW</span></a></li>
-                    <li><a href="#">04<span>TECHNOLOGY</span></a></li>
+                    <li><Router-link to="/">00<span>HOME</span></Router-link></li>
+                    <li><Router-link to="/destination">01<span>DESTINATION</span></Router-link></li>
+                    <li><Router-link to="/crew">02<span>CREW</span></Router-link></li>
+                    <li><Router-link to="/technology">03<span>TECHNOLOGY</span></Router-link></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <Router-view></Router-view>
 </template>
 
 <style scoped>
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
     box-sizing: border-box;
 }
 .main-header {
