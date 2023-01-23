@@ -1,30 +1,63 @@
 <template>
+
     <body class="main-body">
         <div class="main-links">
             <h1><span>01</span>PICK YOUR DESTINATION</h1>
             <ul>
-                <li><a>MOON</a></li>
-                <li><a>MARS</a></li>
-                <li><a>EUROPA</a></li>
-                <li><a>TITAN</a></li>
+                <li>MOON</li>
+                <li>MARS</li>
+                <li>EUROPA</li>
+                <li>TITAN</li>
             </ul>
-            <!-- <img src="@/assets/destination/image-moon.png" alt="Moon"> -->
         </div>
-        <Router-view></Router-view>
+        <div class="destinations">
+            <img src="@/assets/destination/image-moon.png" alt="MOON">
+            <div>
+                <p><span>MOON</span><br><br>See our planet as you've never seen it before.
+                    A perfect relaxing trip away to help regain perspective and come back refreshed.
+                    While you're there,
+                    take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                </p>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>AVG. DISTANCE</td>
+                            <td>EST. TRAVEL TIME</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>384,400 KM</th>
+                            <th>3 DAYS</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </body>
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
+.main-body {
+    display: block;
+}
+
+.destinations {
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-links {
     display: flex;
-    flex-direction: row;
-    position: relative;
+    justify-content: space-between;
     color: white;
-    width: 500px;
     margin-left: 12%;
     margin-top: 100px;
 }
@@ -37,20 +70,56 @@
 ul {
     list-style-type: none;
     display: flex;
-    position: absolute;
-    left: 110%;
-    top: 80px;
+    margin-right: 15%;
+    margin-top: 9%;
 }
 
-ul a {
+ul li {
     text-decoration: none;
+    cursor: pointer;
     font-size: large;
-    height: 30px;
+    height: 35px;
     margin-right: 35px;
     color: #d3d3d3;
 }
 
-ul a:hover {
+ul li:hover {
     color: #ffffff;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.destinations img {
+    margin-left: 15%;
+}
+
+.destinations div {
+    margin-right: 8%;
+    margin-top: 2%;
+    width: 400px;
+    font-weight: 100;
+    font-size: 17px;
+    color: white;
+}
+
+.destinations div span {
+    font-size: 110px;
+}
+
+.destinations hr {
+    border-color: rgba(255, 255, 255, 0.384);
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    font-size: small;
+}
+
+th {
+    text-align: left;
+    font-size: 25px;
 }
 </style>
