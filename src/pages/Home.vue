@@ -1,9 +1,8 @@
 <template>
-
     <body class="main-body">
         <div class="main-text">
             <h2>SO, YOU WANT TO TRAVEL TO</h2>
-            <P>SPACE</P>
+            <h1>SPACE</h1>
             <h3>Let's face it; if you want o go to space, you might as well genuinely go to outer space and not hover
                 kind of on the edge of it. Well sit back, and relax because we'll give you truly out of this world
                 experiance</h3>
@@ -15,8 +14,9 @@
 </template>
 
 <style scoped>
-p {
-    font-size: 160px;
+.main-text h1 {
+    font-size: 155px;
+    font-weight: 100;
 }
 .main-text {
     color: white;

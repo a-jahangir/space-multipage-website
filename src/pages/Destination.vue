@@ -1,16 +1,15 @@
 <template>
-
-    <body class="main-body">
+    <main class="main-body">
         <div class="main-links">
             <h1><span>01</span>PICK YOUR DESTINATION</h1>
             <ul>
-                <li>MOON</li>
-                <li>MARS</li>
-                <li>EUROPA</li>
-                <li>TITAN</li>
+                <li @click="changeDedtination('moon')">MOON</li>
+                <li @click="changeDedtination('mars')">MARS</li>
+                <li @click="changeDedtination('europa')">EUROPA</li>
+                <li @click="changeDedtination('titan')">TITAN</li>
             </ul>
         </div>
-        <div class="destinations">
+        <div v-if="destination === 'moon'" class="destinations">
             <img src="@/assets/destination/image-moon.png" alt="MOON">
             <div>
                 <p><span>MOON</span><br><br>See our planet as you've never seen it before.
@@ -38,10 +37,100 @@
                 </table>
             </div>
         </div>
-    </body>
+        <div v-else-if="destination === 'mars'" class="destinations">
+            <img src="@/assets/destination/image-mars.png" alt="MARS">
+            <div>
+                <p><span>MARS</span><br><br>Don't forget to pack your hiking boots.
+                    You'll need them to tackle Olympus Mons,
+                    the tallest planetary mountain in our solar system.
+                    It's two and a half times the size of Everest!
+                </p>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>AVG. DISTANCE</td>
+                            <td>EST. TRAVEL TIME</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>225 MIL. km</th>
+                            <th>9 months</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div v-else-if="destination === 'europa'" class="destinations">
+            <img src="@/assets/destination/image-europa.png" alt="EUROPA">
+            <div>
+                <p><span>EUROPA</span><br><br>The smallest of the four Galilean moons orbiting Jupiter,
+                    Europa is a winter lover's dream. With an icy surface,
+                    it's perfect for a bit of ice skating, curling,
+                    hockey, or simple relaxation in your snug wintery cabin.
+                </p>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>AVG. DISTANCE</td>
+                            <td>EST. TRAVEL TIME</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>628 MIL. km</th>
+                            <th>3 years</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div v-else class="destinations">
+            <img src="@/assets/destination/image-titan.png" alt="TITAN">
+            <div>
+                <p><span>TITAN</span><br><br>The only moon known to have a dense atmosphere other than Earth,
+                    Titan is a home away from home (just a few hundred degrees colder!).
+                    As a bonus, you get striking views of the Rings of Saturn.
+                </p>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>AVG. DISTANCE</td>
+                            <td>EST. TRAVEL TIME</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1.6 BIL. km</th>
+                            <th>7 years</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+const destination = ref('moon')
+
+function changeDedtination (selected) {
+  destination.value = selected
+}
 </script>
 
 <style scoped>
