@@ -34,7 +34,7 @@
     margin-top: 2rem;
 }
 
-nav {
+.main-header nav {
     display: flex;
     align-items: center;
     height: 100%;
@@ -43,7 +43,7 @@ nav {
     backdrop-filter: blur(30px);
 }
 
-nav ul {
+.main-header nav ul {
     list-style-type: none;
     display: flex;
     position: absolute;
@@ -51,7 +51,7 @@ nav ul {
     padding-left: 12%;
 }
 
-nav a {
+.main-header nav a {
     text-decoration: none;
     display: flex;
     height: 50px;
@@ -59,15 +59,15 @@ nav a {
     margin-right: 50px;
 }
 
-nav a span {
+.main-header nav a span {
     color: #cacaca9d;
     padding-left: 8px;
 }
 
-nav a span:hover {
+.main-header nav a span:hover {
     color: #ffffff;
 }
-.line {
+.main-header line {
     position: absolute;
     bottom: 50%;
     left: 12%;

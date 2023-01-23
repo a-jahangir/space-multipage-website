@@ -14,15 +14,15 @@
 </template>
 
 <style scoped>
-.main-text h1 {
-    font-size: 155px;
-    font-weight: 100;
-}
 .main-text {
     color: white;
     width: 390px;
     margin-left: 12%;
     margin-top: 250px;
+}
+.main-text h1 {
+    font-size: 155px;
+    font-weight: 100;
 }
 .explore-button {
     display: flex;
