@@ -6,10 +6,10 @@
         <pilot v-else-if="crew == 'pilot'"/>
         <flightEngineer v-else/>
         <div class="dotList">
-            <button @click="changeCrew('commander')"></button>
-            <button @click="changeCrew('missionSpecialist')"></button>
-            <button @click="changeCrew('pilot')"></button>
-            <button @click="changeCrew('flightEngineer')"></button>
+            <button class="deactiveButton" :class="{ activeButton : crew=='commander'}" @click="changeCrew('commander')"></button>
+            <button class="deactiveButton" :class="{ activeButton : crew=='missionSpecialist'}" @click="changeCrew('missionSpecialist')"></button>
+            <button class="deactiveButton" :class="{ activeButton : crew=='pilot'}" @click="changeCrew('pilot')"></button>
+            <button class="deactiveButton" :class="{ activeButton : crew=='flightEngineer'}" @click="changeCrew('flightEngineer')"></button>
         </div>
     </main>
 </template>
@@ -48,19 +48,24 @@ function changeCrew (selected) {
 
 .dotList {
     display: flex;
-    height: 15px;
-    width: 15px;
     margin-left: 12%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
-.dotList button {
-    background-color: rgb(122, 122, 122);
+.deactiveButton {
+    background-color: rgba(77, 77, 77, 0.514);
+    height: 13px;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
     margin-right: 15px;
 }
-.dotList button:hover {
+.deactiveButton:hover {
+    background-color: rgb(160, 160, 160)}
+.activeButton {
+    background-color: rgb(255, 255, 255);
+}
+.activeButton:hover {
     background-color: rgb(255, 255, 255);
 }
 </style>
@@ -99,7 +104,6 @@ h3 {
 
 .crew-img img {
     position: absolute;
-    z-index: -1;
     bottom: 0;
     right: 5%;
 }

@@ -3,9 +3,9 @@
         <h1><span>03</span>SPACE LAUNCH 101</h1>
         <div class="technology">
             <div class="pageButtons">
-                <button @click="changeTechnology('launchVehivle')">1</button>
-                <button @click="changeTechnology('spacePort')">2</button>
-                <button @click="changeTechnology('spaceCapsule')">3</button>
+                <button class="deactiveButton" :class="{ activeButton : technology=='launchVehivle'}" @click="changeTechnology('launchVehivle')">1</button>
+                <button class="deactiveButton" :class="{ activeButton : technology=='spacePort'}" @click="changeTechnology('spacePort')">2</button>
+                <button class="deactiveButton" :class="{ activeButton : technology=='spaceCapsule'}" @click="changeTechnology('spaceCapsule')">3</button>
             </div>
             <launchVehivle v-if="technology == 'launchVehivle'"/>
             <spacePort v-else-if="technology == 'spacePort'"/>
@@ -24,7 +24,6 @@ const technology = ref('launchVehivle')
 
 function changeTechnology (selected) {
   technology.value = selected
-  console.log(technology.value)
 }
 </script>
 
@@ -57,8 +56,9 @@ function changeTechnology (selected) {
     margin-top: 100px;
 }
 
-.pageButtons button {
+.deactiveButton {
     color: white;
+    cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.103);
     font-size: 35px;
     font-weight: 100;
@@ -68,9 +68,22 @@ function changeTechnology (selected) {
     height: 80px;
     width: 80px;
 }
-.pageButtons button:hover {
-    color: black;
-    background-color: white;
+
+.deactiveButton:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.activeButton {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    font-size: 35px;
+    font-weight: 100;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
 }
 </style>
 

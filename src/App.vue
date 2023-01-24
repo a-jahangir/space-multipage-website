@@ -1,10 +1,28 @@
 <template>
-  <MainHeader />
-  <Router-view></Router-view>
+  <div :class="{ homeBackGround: pathName='home',
+  destinationBackGround: pathName='destination',
+  crewBackGround: pathName='crew',
+  technologyBackGround: pathName='technology'
+  }">
+    <MainHeader/>
+    <Router-view></Router-view>
+  </div>
 </template>
 
 <script setup>
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import MainHeader from './components/MainHeader.vue'
+
+const route = useRoute()
+const pathName = ref('home')
+
+watch(
+  () => route.name,
+  () => {
+    pathName.value = route.name
+  }
+)
 
 </script>
 
@@ -16,12 +34,31 @@ import MainHeader from './components/MainHeader.vue'
 }
 
 .main-body {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-html {
-  background-image: url(./assets/home/background-home-desktop.jpg);
+.homeBackGround {
+  height: 100vh;
+  background-image: url(../src/assets/home/home.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.destinationBackGround {
+  height: 100vh;
+  background-image: url(../src/assets/destination/destination.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.crewBackGround {
+  height: 100vh;
+  background-image: url(../src/assets/crew/crew.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.technologyBackGround {
+  height: 100vh;
+  background-image: url(../src/assets/technology/technology.jpg);
   background-size: 100% 100%;
   background-attachment: fixed;
 }

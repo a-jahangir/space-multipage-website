@@ -3,10 +3,10 @@
         <div class="main-links">
             <h1><span>01</span>PICK YOUR DESTINATION</h1>
             <ul>
-                <li @click="changeDestination('moon')">MOON</li>
-                <li @click="changeDestination('mars')">MARS</li>
-                <li @click="changeDestination('europa')">EUROPA</li>
-                <li @click="changeDestination('titan')">TITAN</li>
+                <li class="deactiveButton" :class="{ activeButton : destination=='moon'}" @click="changeDestination('moon')">MOON</li>
+                <li class="deactiveButton" :class="{ activeButton : destination=='mars'}" @click="changeDestination('mars')">MARS</li>
+                <li class="deactiveButton" :class="{ activeButton : destination=='europa'}" @click="changeDestination('europa')">EUROPA</li>
+                <li class="deactiveButton" :class="{ activeButton : destination=='titan'}" @click="changeDestination('titan')">TITAN</li>
             </ul>
         </div>
         <moon v-if="destination === 'moon'" />
@@ -54,18 +54,26 @@ function changeDestination (selected) {
     margin-right: 15%;
     margin-top: 9%;
 }
-.main-links ul li {
+.deactiveButton {
     text-decoration: none;
     cursor: pointer;
     font-size: large;
     height: 35px;
     margin-right: 35px;
-    color: #d3d3d3;
+    color: #acacac;
 }
-.main-links ul li:hover {
+.deactiveButton:hover {
     color: #ffffff;
-    color: rgba(255, 255, 255, 0.9);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+    color: rgb(228, 227, 227);
+    border-bottom: 2px solid #acacac;
+}
+.activeButton{
+    color: white;
+    border-bottom: 2px solid #ffffff;
+}
+.activeButton:hover{
+    color: white;
+    border-bottom: 2px solid #ffffff;
 }
 </style>
 

@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="main-header">
-            <div>
+            <div class="navbar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
                     <g fill="none" fill-rule="evenodd">
                         <circle cx="24" cy="24" r="24" fill="#FFF" />
@@ -13,10 +13,10 @@
             <hr class="line">
             <nav>
                 <ul>
-                    <li><Router-link to="/">00<span>HOME</span></Router-link></li>
-                    <li><Router-link to="/destination">01<span>DESTINATION</span></Router-link></li>
-                    <li><Router-link to="/crew">02<span>CREW</span></Router-link></li>
-                    <li><Router-link to="/technology">03<span>TECHNOLOGY</span></Router-link></li>
+                    <li><Router-link class="deactiveButton" to="/">00<span>HOME</span></Router-link></li>
+                    <li><Router-link class="deactiveButton" to="/destination">01<span>DESTINATION</span></Router-link></li>
+                    <li><Router-link class="deactiveButton" to="/crew">02<span>CREW</span></Router-link></li>
+                    <li><Router-link class="deactiveButton" to="/technology">03<span>TECHNOLOGY</span></Router-link></li>
                 </ul>
             </nav>
         </div>
@@ -29,11 +29,10 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    top: 2rem;
     height: 80px;
     padding-left: 60px;
-    margin-top: 2rem;
 }
-
 .main-header nav {
     display: flex;
     align-items: center;
@@ -51,21 +50,19 @@
     padding-left: 12%;
 }
 
-.main-header nav a {
+.deactiveButton {
     text-decoration: none;
     display: flex;
     height: 50px;
     color: #ffffff;
     margin-right: 50px;
 }
-
-.main-header nav a span {
-    color: #cacaca9d;
-    padding-left: 8px;
+.deactiveButton:hover{
+    border-bottom: 2px solid rgba(160, 160, 160, 0.74);
 }
-
-.main-header nav a span:hover {
-    color: #ffffff;
+.main-header nav a span {
+    color: #cacacad2;
+    padding-left: 8px;
 }
 .main-header hr {
     position: absolute;
@@ -76,6 +73,10 @@
     z-index: 2;
 }
 .router-link-active {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+}
+.router-link-active:hover {
     color: rgba(255, 255, 255, 0.9);
     border-bottom: 2px solid rgba(255, 255, 255, 0.9);
 }
