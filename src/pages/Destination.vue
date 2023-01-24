@@ -82,7 +82,7 @@ function changeDestination (selected) {
 }
 
 .destinations div {
-    margin-right: 8%;
+    margin-right: 9%;
     margin-top: 2%;
     width: 400px;
     font-weight: 100;
