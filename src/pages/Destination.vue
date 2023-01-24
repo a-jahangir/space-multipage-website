@@ -3,10 +3,10 @@
         <div class="main-links">
             <h1><span>01</span>PICK YOUR DESTINATION</h1>
             <ul>
-                <li @click="changeDedtination('moon')">MOON</li>
-                <li @click="changeDedtination('mars')">MARS</li>
-                <li @click="changeDedtination('europa')">EUROPA</li>
-                <li @click="changeDedtination('titan')">TITAN</li>
+                <li @click="changeDestination('moon')">MOON</li>
+                <li @click="changeDestination('mars')">MARS</li>
+                <li @click="changeDestination('europa')">EUROPA</li>
+                <li @click="changeDestination('titan')">TITAN</li>
             </ul>
         </div>
         <moon v-if="destination === 'moon'" />
@@ -25,7 +25,7 @@ import europa from '@/components/destinations/europa.vue'
 
 const destination = ref('moon')
 
-function changeDedtination (selected) {
+function changeDestination (selected) {
   destination.value = selected
 }
 </script>
@@ -45,14 +45,14 @@ function changeDedtination (selected) {
     padding-right: 20px;
     color: gray;
 }
+.main-links h1 {
+    font-weight: 100;
+}
 .main-links ul {
     list-style-type: none;
     display: flex;
     margin-right: 15%;
     margin-top: 9%;
-}
-.main-links h1 {
-    font-weight: 100;
 }
 .main-links ul li {
     text-decoration: none;
@@ -68,7 +68,9 @@ function changeDedtination (selected) {
     border-bottom: 2px solid rgba(255, 255, 255, 0.9);
 }
 </style>
+
 <!-- // style for destinations component's -->
+
 <style>
 .destinations {
     display: flex;

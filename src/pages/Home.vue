@@ -16,12 +16,12 @@
 <style scoped>
 .main-text {
     color: white;
-    width: 390px;
+    width: 50%;
     margin-left: 12%;
     margin-top: 250px;
 }
 .main-text h1 {
-    font-size: 155px;
+    font-size: 170px;
     font-weight: 100;
 }
 .explore-button {

@@ -67,7 +67,7 @@
 .main-header nav a span:hover {
     color: #ffffff;
 }
-.main-header line {
+.main-header hr {
     position: absolute;
     bottom: 50%;
     left: 12%;
