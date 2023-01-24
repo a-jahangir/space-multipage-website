@@ -1,9 +1,5 @@
 <template>
-  <div :class="{ homeBackGround: pathName='home',
-  destinationBackGround: pathName='destination',
-  crewBackGround: pathName='crew',
-  technologyBackGround: pathName='technology'
-  }">
+  <div :class="changebackground()">
     <MainHeader/>
     <Router-view></Router-view>
   </div>
@@ -23,6 +19,18 @@ watch(
     pathName.value = route.name
   }
 )
+
+function changebackground () {
+  if (pathName.value === 'home') {
+    return 'homeBackGround'
+  } else if (pathName.value === 'destination') {
+    return 'destinationBackGround'
+  } else if (pathName.value === 'crew') {
+    return 'crewBackGround'
+  } else {
+    return 'technologyBackGround'
+  }
+}
 
 </script>
 
