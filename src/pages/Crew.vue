@@ -25,9 +25,7 @@ const crew = ref('commander')
 
 function changeCrew (selected) {
   crew.value = selected
-  console.log(crew.value)
 }
-
 </script>
 
 <style scoped>
