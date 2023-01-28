@@ -39,7 +39,7 @@ function changeDestination (selected) {
     justify-content: space-between;
     color: white;
     margin-left: 12%;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .main-links span {
     padding-right: 20px;
@@ -52,7 +52,7 @@ function changeDestination (selected) {
     list-style-type: none;
     display: flex;
     margin-right: 15%;
-    margin-top: 9%;
+    margin-top: 5%;
 }
 .deactiveButton {
     text-decoration: none;
@@ -87,11 +87,11 @@ function changeDestination (selected) {
 
 .destinations img {
     margin-left: 15%;
+    height: 55vh;
 }
 
 .destinations div {
     margin-right: 9%;
-    margin-top: 2%;
     width: 400px;
     font-weight: 100;
     font-size: 17px;
@@ -99,7 +99,7 @@ function changeDestination (selected) {
 }
 
 .destinations div span {
-    font-size: 110px;
+    font-size: 100px;
 }
 
 .destinations hr {

@@ -38,7 +38,7 @@ function changeCrew (selected) {
     color: white;
     font-weight: 100;
     margin-left: 12%;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .main-body h1 span {
@@ -49,7 +49,6 @@ function changeCrew (selected) {
 .dotList {
     display: flex;
     margin-left: 12%;
-    margin-top: 2%;
 }
 
 .deactiveButton {
@@ -82,7 +81,7 @@ function changeCrew (selected) {
     color: white;
     width: 50%;
     margin-left: 12%;
-    margin-top: 150px;
+    margin-top: 80px;
     height: 320px;
 }
 
@@ -104,7 +103,8 @@ h3 {
 
 .crew-img img {
     position: absolute;
+    height: 80vh;
     bottom: 0;
-    right: 5%;
+    right: 10%;
 }
 </style>

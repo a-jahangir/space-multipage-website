@@ -33,17 +33,11 @@ function changebackground () {
 }
 
 </script>
-
 <style>
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-sizing: border-box;
   margin: 0;
-}
-
-.main-body {
-  display: flex;
-  justify-content: space-between;
 }
 
 .homeBackGround {

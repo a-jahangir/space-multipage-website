@@ -37,7 +37,7 @@ function changeTechnology (selected) {
     color: white;
     font-weight: 100;
     margin-left: 12%;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .main-body h1 span {
@@ -53,7 +53,7 @@ function changeTechnology (selected) {
     display: flex;
     flex-direction: column;
     margin-left: 12%;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .deactiveButton {
@@ -80,7 +80,7 @@ function changeTechnology (selected) {
     font-size: 35px;
     font-weight: 100;
     background-color: rgb(255, 255, 255);
-    margin-top: 20px;
+    margin-top: 0;
     border-radius: 50%;
     height: 80px;
     width: 80px;
@@ -94,7 +94,7 @@ function changeTechnology (selected) {
     color: white;
     margin-left: 5%;
     font-size: 16px;
-    margin-top: 130px;
+    margin-top: 85px;
     font-weight: 100;
     width: 50%;
     height: 10px;
@@ -107,5 +107,8 @@ function changeTechnology (selected) {
 .technology-text h2,
 h3 {
     font-size: 17px;
+}
+.technology-img img{
+    height: 65vh;
 }
 </style>

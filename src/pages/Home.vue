@@ -14,11 +14,15 @@
 </template>
 
 <style scoped>
+.main-body {
+  display: flex;
+  justify-content: space-between;
+}
 .main-text {
     color: white;
     width: 50%;
     margin-left: 12%;
-    margin-top: 250px;
+    margin-top: 10%;
 }
 .main-text h1 {
     font-size: 170px;
@@ -39,8 +43,8 @@
         rgba(0, 0, 0, 0.09) 0px 8px 4px,
         rgba(0, 0, 0, 0.09) 0px 16px 8px,
         rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    margin-top: 300px;
-    margin-right: 10%;
+    margin-top: 15%;
+    margin-right: 15%;
     width: 250px;
     height: 250px;
     border-radius: 50%;
