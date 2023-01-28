@@ -1,5 +1,5 @@
 <template>
-  <div :class="changebackground()">
+  <div class="body-container" :class="changebackground()">
     <MainHeader/>
     <Router-view></Router-view>
   </div>
@@ -39,25 +39,25 @@ function changebackground () {
   box-sizing: border-box;
   margin: 0;
 }
-
-.homeBackGround {
+.body-container{
   height: 100vh;
   background-size: cover;
+  background-position: bottom center;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+}
+
+.homeBackGround {
   background-image: url(../src/assets/home/home.jpg);
 }
 .destinationBackGround {
-  height: 100vh;
-  background-size: cover;
   background-image: url(../src/assets/destination/destination.jpg);
 }
 .crewBackGround {
-  height: 100vh;
-  background-size: cover;
   background-image: url(../src/assets/crew/crew.jpg);
 }
 .technologyBackGround {
-  height: 100vh;
-  background-size: cover;
   background-image: url(../src/assets/technology/technology.jpg);
-  }
+}
 </style>

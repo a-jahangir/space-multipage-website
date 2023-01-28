@@ -31,6 +31,7 @@ function changeCrew (selected) {
 <style scoped>
 .main-body {
     display: block;
+    padding-bottom: 30px;
 }
 
 .main-body h1 {

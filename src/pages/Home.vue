@@ -17,6 +17,7 @@
 .main-body {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 .main-text {
     color: white;

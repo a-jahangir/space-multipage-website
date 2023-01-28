@@ -33,6 +33,7 @@ function changeDestination (selected) {
 <style scoped>
 .main-body {
     display: block;
+    margin-bottom: 30px;
 }
 .main-links {
     display: flex;
@@ -87,7 +88,7 @@ function changeDestination (selected) {
 
 .destinations img {
     margin-left: 15%;
-    height: 55vh;
+    height: 350px;
 }
 
 .destinations div {

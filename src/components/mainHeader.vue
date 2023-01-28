@@ -32,6 +32,7 @@
     top: 2rem;
     height: 80px;
     padding-left: 60px;
+    z-index: 2;
 }
 .main-header nav {
     display: flex;
