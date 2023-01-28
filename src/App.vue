@@ -42,26 +42,22 @@ function changebackground () {
 
 .homeBackGround {
   height: 100vh;
+  background-size: cover;
   background-image: url(../src/assets/home/home.jpg);
-  background-size: 100% 100%;
-  background-attachment: fixed;
 }
 .destinationBackGround {
   height: 100vh;
+  background-size: cover;
   background-image: url(../src/assets/destination/destination.jpg);
-  background-size: 100% 100%;
-  background-attachment: fixed;
 }
 .crewBackGround {
   height: 100vh;
+  background-size: cover;
   background-image: url(../src/assets/crew/crew.jpg);
-  background-size: 100% 100%;
-  background-attachment: fixed;
 }
 .technologyBackGround {
   height: 100vh;
+  background-size: cover;
   background-image: url(../src/assets/technology/technology.jpg);
-  background-size: 100% 100%;
-  background-attachment: fixed;
-}
+  }
 </style>
