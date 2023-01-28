@@ -41,10 +41,10 @@ function changebackground () {
 }
 .body-container{
   height: 100vh;
-  background-size: cover;
-  background-position: bottom center;
   display: grid;
   grid-template-rows: min-content 1fr;
+  background-size: cover;
+  background-position: bottom center;
   overflow-x: hidden;
 }
 

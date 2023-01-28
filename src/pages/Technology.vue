@@ -30,7 +30,6 @@ function changeTechnology (selected) {
 <style scoped>
 .main-body {
     display: block;
-    padding-bottom: 30px;
 }
 
 .main-body h1 {
@@ -96,6 +95,7 @@ function changeTechnology (selected) {
     margin-left: 5%;
     font-size: 16px;
     margin-top: 85px;
+    padding-bottom: 300px;
     font-weight: 100;
     width: 50%;
     height: 10px;
