@@ -53,7 +53,7 @@ function changeTechnology (selected) {
     display: flex;
     flex-direction: column;
     margin-left: 12%;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .deactiveButton {
@@ -80,7 +80,7 @@ function changeTechnology (selected) {
     font-size: 35px;
     font-weight: 100;
     background-color: rgb(255, 255, 255);
-    margin-top: 0;
+    margin-top: 20px;
     border-radius: 50%;
     height: 80px;
     width: 80px;
