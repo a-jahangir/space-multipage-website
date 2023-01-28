@@ -8,7 +8,7 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import MainHeader from './components/MainHeader.vue'
+import MainHeader from './components/mainHeader.vue'
 
 const route = useRoute()
 const pathName = ref('home')
