@@ -37,8 +37,8 @@ function changebackground () {
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-sizing: border-box;
-  margin: 0;
   transition: all 0.3s linear;
+  margin: 0;
 }
 .body-container{
   height: 100vh;

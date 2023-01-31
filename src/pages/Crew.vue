@@ -106,6 +106,6 @@ h3 {
     position: absolute;
     height: 80vh;
     bottom: 0;
-    right: 10%;
+    right: 5%;
 }
 </style>

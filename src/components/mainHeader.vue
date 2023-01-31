@@ -57,6 +57,7 @@
     height: 50px;
     color: #ffffff;
     margin-right: 50px;
+    border-bottom: 2px solid rgba(160, 160, 160, 0);
 }
 .deactiveButton:hover{
     border-bottom: 2px solid rgba(160, 160, 160, 0.74);

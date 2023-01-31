@@ -62,6 +62,7 @@ function changeDestination (selected) {
     height: 35px;
     margin-right: 35px;
     color: #acacac;
+    border-bottom: 2px solid #ffffff00;
 }
 .deactiveButton:hover {
     color: #ffffff;
