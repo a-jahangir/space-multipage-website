@@ -1,6 +1,6 @@
 <template>
   <div class="body-container" :class="changebackground()">
-    <MainHeader/>
+    <mainHeader/>
     <Router-view></Router-view>
   </div>
 </template>
@@ -8,7 +8,7 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import MainHeader from './components/mainHeader.vue'
+import mainHeader from './components/mainHeader.vue'
 
 const route = useRoute()
 const pathName = ref('home')
@@ -38,6 +38,7 @@ function changebackground () {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-sizing: border-box;
   margin: 0;
+  transition: all 0.3s linear;
 }
 .body-container{
   height: 100vh;
